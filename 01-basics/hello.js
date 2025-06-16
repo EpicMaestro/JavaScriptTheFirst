@@ -1,1 +1,14 @@
-console.log("Hello Doston .. comic verse ke ek aur episode mein aap sabhi ka swaagat hain !")
+const accountID = 14453
+let email="aamod1313@gmail.com"
+var password ="12434"
+accountCity= "Jaipur"
+
+//accountID= 113143 ->not allowed
+console.log(accountID);
+
+email="aamod44@gmail.com"
+console.log(email)
+
+password ="144"
+
+console.table([accountID , email , password,accountCity])
