@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        
+        .bg-black{
+            background-color: #212121;
+            color:white;
+        }
+    </style>
+
+    <title>DOM</title>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 class="heading" id="title"> DOM learning for Project 
+        <span style = "display : none";> Test ke liye text </span> </h1>
+
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui!</h2>
+
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.        </h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi totam recusandae quam cum beatae hic laboriosam laborum aliquam, ducimus alias, iusto laudantium iste at reiciendis minus incidunt voluptas, tempore iure repellat! Pariatur suscipit magnam vitae! Quos corporis dicta tempora.</p>
+        <ul>
+            <li> one </li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+ <!-- document.getElementById("Idname").innerHTML = "<h1> Helloqeqe </h1>"
+
+
+ Open in Live Server , go to Inspect->Console 
+
+
+ Different DOM selectors  -->
+
+
+<!-- 1) document.getElementById("title")
+<h1 class=​"heading" id=​"title">​ DOM learning for Project ​</h1>​
+
+2) document.getElementById("title").className
+'heading'
+
+3) document.getElementById("title").getAttribute('class')
+'heading'
+
+4) document.getElementById("title").setAttribute('class' 'test' 'heading')
+
+This overrides the older names  
+
+5) title.style.backgroundColor="green"
+
+6)title.style.borderRadius="5 px"
+-->
+
+
+<!-- * title.innerHTML
+' DOM learning for Project \n        <span style="display : none" ;=""> Test ke liye text </span> '
+
+* title.innerText
+'DOM learning for Project'
+
+* title.textContent
+' DOM learning for Project \n         Test ke liye text   -->
+
+
+<!-- *QUERY SELECTORS 
+
+const myul = document.querySelector('ul')
+
+const turnGreen = myul.querySelector('li')
+
+turnGreen.innerHTML="five"
+'five' : ( 'one' changes to 'five') -->
+
+
+*Query Selector All ( making array of selections)
+
+const tempLiList= document.querySelectorAll("li")
+NodeList(3) [li, li, li]
+
+tempLiList.style.backgroundColor="green"
+VM1183:1 Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundColor')
+    at <anonymous>:1:33
+(anonymous) @ VM1183:1Understand this error
+
+tempLiList[0].style.backgroundColor="green"
+'green'
